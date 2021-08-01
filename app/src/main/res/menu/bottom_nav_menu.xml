@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_main"
+        android:checked="true"
+        android:icon="@drawable/ic_data"
+        android:title="记录" />
+
+    <!--因为需要覆盖view 此处省略android:icon-->
+    <item
+        android:id="@+id/menu_add"
+        android:title="" />
+
+    <item
+        android:id="@+id/menu_chart"
+        android:icon="@drawable/ic_chart"
+        android:title="统计" />
+
+
+</menu>

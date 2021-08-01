@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.easynote">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application
+        android:name="org.litepal.LitePalApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="xBolFIRcpry4CWHMu5nSW6MI7M4ZIkm8" >
+        </meta-data>
+        <activity android:name=".StartActivity"
+            android:theme="@style/StartTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DetailActivity"
+            android:theme="@style/AddDataTheme"></activity>
+        <activity android:name=".BaseActivity" />
+        <activity
+            android:name=".AddDataActivity"
+            android:label="发布新日记"
+            android:theme="@style/AddDataTheme" />
+        <activity android:name=".MainActivity"
+            android:theme="@style/IndexTheme">
+
+        </activity>
+        <activity
+            android:name=".SetPwd"
+            android:label="密码设置"
+            android:theme="@style/IndexTheme">
+        </activity>
+        <activity android:name=".InputPwd"
+            android:theme="@style/IndexTheme">
+        </activity>
+        <activity android:name=".ChangePwd"
+            android:theme="@style/IndexTheme">
+        </activity>
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.easynote.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        <service
+            android:name=".DetectService"
+            android:enabled="true"
+            android:exported="true" />
+    </application>
+
+</manifest>

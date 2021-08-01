@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="ToolbarBack">#757575</color>
+    <color name="navigationText">#000</color>
+    <color name="navigationIcon">#333</color>
+    <color name="navigationBackground">#eee</color>
+    <color name="gray">#333</color>
+    <color name="gray1">#ddd</color>
+    <color name="background">#F5F5F5</color>
+    <color name="text">#D6D6D6</color>
+    <color name="blackText">#222</color>
+    <color name="colorGray">#AAA</color>
+    <color name="white">#fff</color>
+</resources>

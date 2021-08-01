@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/toolbar_delete"
+        android:icon="@drawable/toolbar_delete"
+        android:title="Delete"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/toolbar_update"
+        android:icon="@drawable/toolbar_update"
+        android:title="Update"
+        app:showAsAction="always"/>
+</menu>
