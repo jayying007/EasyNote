@@ -6,3 +6,6 @@
 - 可测心情：根据文本分析情感
 - 图表显示：清晰统计颜值与心情的变化
 
+![](./Resources/1.png)
+![](./Resources/2.png)
+![](./Resources/3.png)
